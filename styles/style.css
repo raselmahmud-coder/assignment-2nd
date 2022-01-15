@@ -276,9 +276,12 @@ footer.text-items {
 }
 
 /* ================ For mobile device styles===========================- */
-@media only screen and (max-width:360px){
-.nav-bar{
+@media only screen and (max-width:688px){
+.nav-bar .menu-bar{
     display: none;
+}
+.nav-bar{
+    flex-direction: column;
 }
 /* top header */
 h1.slider-head-item {
@@ -303,7 +306,17 @@ h1.slider-head-item {
 .products{
     grid-template-columns: repeat(1, 1fr);
 }
+/* Crousel style */
+.crousel, .crousel img{
+    display: none;
+    width: 10em;
+    height: 10em;
+}
 }
 
 
-
+@media only screen and (min-width:688px) and (max-width:992px){
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+}
+}
