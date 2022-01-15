@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 body{
-    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    background-color: #f3f1ff;
+}
+/*============ Header section styles======== */
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.menu-bar{
+    flex: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-bar li{
+    list-style: none;
+
+}
+.menu-bar li a{
+    text-decoration: none;
+}
+.slider{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 0;
+
+}
+.slider-image{
+    display: flex;            
+    align-items: center;      
+    justify-content: center;
+}
+.slider-text button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 29px;
+}
+.brand-logos{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+} 
+.brand-logo img{
+    width: 50px;
+    height: 40px;
 }
